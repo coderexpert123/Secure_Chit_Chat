@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chit Chat</title>
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js"></script>
+</head>
+<body>
+
+
+
+<div id="name-from" class="bg-primary">
+
+<div  style="color:white" class="container-fluid">
+    <h1 class="text-center"><marquee>Welcome to the world of Chit Chat</marquee></h1>
+
+    <div class="row">
+    <div class="col-md-4 offset-md-4">
+   <div class="input-group ">
+
+    <input type="text"
+           placeholder="Enter Your Name"
+           id="name-value"
+           class="form-control"
+           autofocus
+    >
+
+
+    <div class="input-group-append">
+        <button type="button" id="login" class="btn btn-danger">Send</button>
+
+    </div>
+    </div>
+   </div>
+ </div>
+</div>
+
+</div>
+
+<div id="chat-room" class="d-none">
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+
+            <div class="col-md-6 offset-md-3">
+
+
+                <div class="card">
+                    <div class="card-body">
+
+
+<div class="table-responsive">
+
+ <table id="message-container">
+
+
+<div class="input-group ">
+
+            <input type="text"
+                   placeholder="Enter Your Name"
+                   id="message-value"
+                   class="form-control"
+                   autofocus
+            >
+            <div class="input-group-append">
+                <button type="button" id="btns" class="btn btn-danger">Send</button>
+
+            </div>
+</div>
+ </table>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
